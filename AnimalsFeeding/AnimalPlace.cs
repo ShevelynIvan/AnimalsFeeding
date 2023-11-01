@@ -9,7 +9,7 @@
         /// <summary>
         /// Max possible volume of food in animal place. Sets in constructor.
         /// </summary>
-        public readonly int MaxVolumeOfFood;
+        public readonly int MaxVolumeOfFood = 100;
 
         /// <summary>
         /// Min possible volume of food in animal place. (Always equals to 0)
@@ -36,12 +36,10 @@
             } 
         }
 
-        public AnimalPlace(string name, string nameOfFood, int maxVolumeOfFood)
+        public AnimalPlace(string name, string nameOfFood)
         {
             NameOfAnimal = name;
             NameOfAnimalFood = nameOfFood;
-            MaxVolumeOfFood = maxVolumeOfFood;
-            
         }
 
         /// <summary>

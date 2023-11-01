@@ -6,10 +6,10 @@
         {
             AnimalsFeedProcessor animalsFeedProcessor = new AnimalsFeedProcessor();
 
-            AnimalPlace dog = new AnimalPlace("Dog","Dog food", 30);
-            AnimalPlace cat = new AnimalPlace("Cat","Cat food", 20);
-            AnimalPlace horse = new AnimalPlace("Horse","Hay", 200);
-            AnimalPlace pig = new AnimalPlace("Pig","Carrot", 100);
+            AnimalPlace dog = new AnimalPlace("Dog","Dog food");
+            AnimalPlace cat = new AnimalPlace("Cat","Cat food");
+            AnimalPlace horse = new AnimalPlace("Horse","Hay");
+            AnimalPlace pig = new AnimalPlace("Pig","Carrot");
 
             animalsFeedProcessor.AddNewAnimalPlace(dog);
             animalsFeedProcessor.AddNewAnimalPlace(cat);
