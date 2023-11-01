@@ -7,7 +7,7 @@
         private int _volumeOfFood;
 
         /// <summary>
-        /// Max possible volume of food in animal place. Sets in constructor.
+        /// Max possible volume of food in animal place. (1 serving = 100)
         /// </summary>
         public readonly int MaxVolumeOfFood = 100;
 
