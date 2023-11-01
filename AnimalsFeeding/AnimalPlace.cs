@@ -101,7 +101,7 @@
                 {
                     NameOfAnimal = NameOfAnimal,
                     NameOfAnimalFood = NameOfAnimalFood,
-                    AmountOfNeededFood = MaxVolumeOfFood - VolumeOfFood
+                    AmountOfNeededFood = MaxVolumeOfFood
                 };
                 OnFoodFinished(e);
             }
