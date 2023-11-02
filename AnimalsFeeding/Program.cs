@@ -20,7 +20,7 @@
                 for (int i = 0; i < 5; i++)
                 {
                     animalsFeedProcessor.FeedAll();
-                    Thread.Sleep(100);
+                    Thread.Sleep(7000);
                 }
             }
         }
