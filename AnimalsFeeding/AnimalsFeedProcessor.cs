@@ -1,6 +1,6 @@
 ﻿namespace AnimalsFeeding
 {
-    public class AnimalsFeedProcessor
+    public class AnimalsFeedProcessor :IDisposable
     {
         /// <summary>
         /// List of animal places
@@ -45,6 +45,14 @@
                 Console.WriteLine($"Adding {e.NameOfAnimalFood} for {e.NameOfAnimal}");
                 animal.Feed(e.AmountOfNeededFood);
                 Console.WriteLine();
+            }
+        }
+
+        public void Dispose()
+        {
+            foreach (var animal in _animalPlaces)
+            {
+                animal.FoodFinished -= AnimalFoodFinishedEventHandler;
             }
         }
     }
